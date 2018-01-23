@@ -1,0 +1,283 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JG PORTFOLIO</title>
+  <link href="assets/icon.png" rel="icon" type="image">
+  <script type="text/javascript" src="assets/js/jquery-3.2.1.js"></script> 
+  <script type="text/javascript" src="assets/bootstrap/js/bootstrap.min.js"></script> 
+  <link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.css"/>
+  <link rel="stylesheet" type="text/css" href="assets/font-awesome/css/font-awesome.min.css" />
+  
+  
+  <style type="text/css">
+  @font-face {
+    font-family: 'RobotoCondensed-Light'; /*a name to be used later*/
+    src: url('assets/fonts/RobotoCondensed-Light.ttf'); /*URL to font*/
+}
+body{
+   font-family: 'RobotoCondensed-Light';
+}
+a{
+  color:black;
+}
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  float: left;
+  min-width: 160px;
+  padding: 5px 0;
+  margin: 2px 0 0;
+  font-size: 14px;
+  text-align: left;
+  list-style: none;
+  background-color: none;
+  border:0px;
+  box-shadow: none;
+
+
+}
+.dropdown-menu > li > a {
+  display: block;
+  padding: 10px 20px;
+  clear: both;
+  font-weight: normal;
+  line-height: 1.42857143;
+  color: #333;
+  white-space: nowrap;
+}
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+  color: #262626;
+  text-decoration: none;
+  width: auto;
+}
+.nav > li > a:hover,
+.nav > li > a:focus {
+  text-decoration: none;
+  background-color: rgba(255,255,255,0.8);
+}
+/*==============================================================*/
+
+  /* Conatct start */
+
+        .header-title
+        {
+          text-align: center;
+          color:black;
+        }
+
+        #tip 
+        {
+            display:none;  
+        }
+
+        .fadeIn
+        {
+          animation-duration: 3s;
+        }
+
+        .form-control
+        {
+          border-radius:0px;
+          border:1px solid #EDEDED;
+        }
+
+        .form-control:focus
+        {
+          border:1px solid gray;
+        }
+
+        .textarea-contact
+        {
+          resize:none; 
+        }
+
+        .btn-send
+        {
+          border-radius: 0px;
+          border:1px solid black;
+          background:black;
+          color:#fff; 
+          border-radius:5px;  
+        }
+
+        .btn-send:hover
+        {
+          border:1px solid black;
+          background:#fff;
+          color:black;
+          transition:background 0.2s; 
+          border-radius:5px;  
+        }
+
+        .second-portion
+        {
+          margin-top:50px; 
+        }
+
+            @import "//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css";
+    @import "http://fonts.googleapis.com/css?family=Roboto:400,500";
+
+    .box > .icon { text-align: center; position: relative; }
+    .box > .icon > .image { position: relative; z-index: 2; margin: auto; width: 88px; height: 88px; border: 8px solid white; line-height: 88px; border-radius: 50%; background: black; vertical-align: middle; }
+    .box > .icon:hover > .image { background: #333; }
+    .box > .icon > .image > i { font-size: 36px !important; color: #fff !important; }
+    .box > .icon:hover > .image > i { color: white !important; }
+    .box > .icon > .info { margin-top: -24px; background: rgba(0, 0, 0, 0.04); border: 1px solid #e0e0e0; padding: 15px 0 10px 0; min-height:163px;}
+    .box > .icon:hover > .info { background: rgba(0, 0, 0, 0.04); border-color: #e0e0e0; color: white; }
+    .box > .icon > .info > h3.title { font-family: "Robot",sans-serif !important; font-size: 16px; color: #222; font-weight: 700; }
+    .box > .icon > .info > p { font-family: "Robot",sans-serif !important; font-size: 13px; color: #666; line-height: 1.5em; margin: 20px;}
+    .box > .icon:hover > .info > h3.title, .box > .icon:hover > .info > p, .box > .icon:hover > .info > .more > a { color: #222; }
+    .box > .icon > .info > .more a { font-family: "Robot",sans-serif !important; font-size: 12px; color: #222; line-height: 12px; text-transform: uppercase; text-decoration: none; }
+    .box > .icon:hover > .info > .more > a { color: #fff; padding: 6px 8px; background-color: #63B76C; }
+    .box .space { height: 30px; }
+
+    @media only screen and (max-width: 768px)
+    {
+      .contact-form
+      {
+        margin-top:25px; 
+      }
+
+      .btn-send
+      {
+        width: 100%;
+        padding:10px; 
+      }
+
+      .second-portion
+      {
+        margin-top:25px; 
+      }
+    }
+  /* Conatct end */
+  </style>
+  <script type="text/javascript">
+     $(function(){
+    $(".dropdown").hover(            
+            function() {
+                $('.dropdown-menu', this).stop( true, true ).fadeIn("fast");
+                $(this).toggleClass('open');
+                           
+            },
+            function() {
+                $('.dropdown-menu', this).stop( true, true ).fadeOut("fast");
+                $(this).toggleClass('open');
+                             
+            });
+    });
+    
+  </script>
+</head>
+<body>
+ <div class="container">
+  <div class="row">
+        <nav class="navbar " role="navigation">
+  
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"><img src="assets/logo3_cut.png" style="height:90px;"></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="padding-top:20px;">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html" style="font-weight:900">Contact</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  
+</nav>
+
+  </div>
+</div>
+
+<div style="text-align:center; color:red; padding-bottom:100px;">
+
+ <div class="container animated fadeIn">
+
+  <div class="row">
+    <h2 style="font-weight:700" class="header-title"> Contact </h2>
+     <div style="width:50%;text-align:center;margin:auto;"><hr></div>
+    <div class="col-sm-12" id="parent">
+      <div class="col-sm-6">
+      <img src="http://via.placeholder.com/520x320" width="100%" height="320px;">
+      </div>
+
+      <div class="col-sm-6">
+        <form action="form.php" class="contact-form" method="post">
+  
+            <div class="form-group">
+              <input type="text" class="form-control" id="name" name="nm" placeholder="Name" required="" autofocus="">
+            </div>
+        
+        
+            <div class="form-group form_left">
+              <input type="email" class="form-control" id="email" name="em" placeholder="Email" required="">
+            </div>
+        
+          <div class="form-group">
+               <input type="text" class="form-control" id="phone" onkeypress="return event.charCode >= 48 && event.charCode <= 57" maxlength="10" placeholder="Mobile No." required="">
+          </div>
+          <div class="form-group">
+          <textarea class="form-control textarea-contact" rows="5" id="comment" name="FB" placeholder="Type Your Message/Feedback here..." required=""></textarea>
+          <br>
+            <button class="btn btn-default btn-send"> <span class="fa fa-send"></span> Send </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+      
+  </div>
+</div>
+
+</div>
+</div>
+
+
+<div class="navbar  navbar-fixed-bottom" style="background-color:white;">
+    <div class="container">
+      <p class="navbar-text pull-left">© 2018 - JUDE GARAY
+           
+      </p>
+       <div> <a href="http://instagram.com/jeeeygaray" class="navbar-btn btn pull-right"><span class="fa fa-instagram"></span> @jeeeygaray</a></div>
+      <div><a href="http://twitter.com/jeeeygaray" class="navbar-btn btn pull-right"><span class="fa fa-twitter"></span>@jeeeygaray</a></div>
+     <div> <a href="http://facebook.com/iam.jjgaray" class="navbar-btn btn pull-right"><span class="fa fa-facebook"></span> /iam.jjgaray</a></div>
+
+      
+
+    </div>
+    
+    
+  </div>
+</body>
+</html>
+<!-- 
+ <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Gallery</a>
+          <ul class="dropdown-menu" style="text-align:right;">
+            <li><a href="#">Option 1</a></li>
+            <li><a href="#">Option 2</a></li>
+            <li><a href="#">Option 3</a></li>
+          </ul>
+        </li> -->
+
+
+
+
+

@@ -1,0 +1,339 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JG PORTFOLIO</title>
+  <link href="assets/icon.png" rel="icon" type="image">
+  <script type="text/javascript" src="assets/js/jquery-3.2.1.js"></script> 
+  <script type="text/javascript" src="assets/bootstrap/js/bootstrap.min.js"></script> 
+  <link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.css"/>
+  <link rel="stylesheet" type="text/css" href="assets/font-awesome/css/font-awesome.min.css" />
+  
+  
+  <style type="text/css">
+  @font-face {
+    font-family: 'RobotoCondensed-Light'; /*a name to be used later*/
+    src: url('assets/fonts/RobotoCondensed-Light.ttf'); /*URL to font*/
+}
+body{
+   font-family: 'RobotoCondensed-Light';
+}
+a{
+  color:black;
+}
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  float: left;
+  min-width: 160px;
+  padding: 5px 0;
+  margin: 2px 0 0;
+  font-size: 14px;
+  text-align: left;
+  list-style: none;
+  background-color: none;
+  border:0px;
+  box-shadow: none;
+
+
+}
+.dropdown-menu > li > a {
+  display: block;
+  padding: 10px 20px;
+  clear: both;
+  font-weight: normal;
+  line-height: 1.42857143;
+  color: #333;
+  white-space: nowrap;
+}
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+  color: #262626;
+  text-decoration: none;
+  width: auto;
+}
+.nav > li > a:hover,
+.nav > li > a:focus {
+  text-decoration: none;
+  background-color: rgba(255,255,255,0.8);
+}
+/*==============================================================*/
+
+
+section{
+    font-family: 'RobotoCondensed-Light';
+}
+
+h2 {
+    color: #4C4C4C;
+    word-spacing: 5px;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom:30px;
+    font-family: 'RobotoCondensed-Light';
+}
+
+p{
+    font-size:13px;
+}
+
+.ion-minus{
+    padding:0px 10px;
+}
+
+#blog{
+  background-color:none;
+}
+
+#blog .carousel-indicators {
+    bottom: -60px;
+}
+
+#blog .carousel-indicators li{
+    background-color: gray;
+    height: 13px;
+    width: 13px;
+    margin: 5px;
+}
+
+#blog .carousel-indicators li.active{
+    background-color: black;
+}
+
+#blog .card-block{
+    padding: 10px;
+}
+
+#blog .card{
+    background-color: white;
+    border: 1px solid #eceaea;
+    margin: 20px 0px;
+}
+
+.btn.btn-default {
+    background-color: black;
+    color: #fff;
+    border-radius: 0;
+    border: none;
+    padding: 7px 20px;
+    font-size: 13px;
+
+}
+
+  </style>
+  <script type="text/javascript">
+     $(function(){
+    $(".dropdown").hover(            
+            function() {
+                $('.dropdown-menu', this).stop( true, true ).fadeIn("fast");
+                $(this).toggleClass('open');
+                           
+            },
+            function() {
+                $('.dropdown-menu', this).stop( true, true ).fadeOut("fast");
+                $(this).toggleClass('open');
+                             
+            });
+    });
+    
+  </script>
+</head>
+<body>
+
+ <div class="container">
+  <div class="row">
+        <nav class="navbar " role="navigation">
+  
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"><img src="assets/logo3_cut.png" style="height:90px;"></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="padding-top:20px;">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="blog.html" style="font-weight:900">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  
+</nav>
+
+  </div>
+</div>
+
+<div style="text-align:center; padding-bottom:100px;">
+ <h2 style="font-weight:700">Blogs</h2>
+  <div style="width:50%;text-align:center;margin:auto;"><hr></div>
+ <section id="blog">
+      <div class="container">
+           
+            
+           <div class="row">
+             
+       <div id="slider" class="carousel slide" data-ride="carousel">
+                        
+                     <ol class="carousel-indicators">
+                         <li data-target="#slider" data-slide-to="0" class="active"></li>
+                         <li data-target="#slider" data-slide-to="1"></li>
+                     </ol>
+                            
+                      
+             <!-- Carousel items -->
+             <div class="carousel-inner">
+                    
+                <div class="item active">
+                  <div class="row">
+          
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+             <div class="card text-center">
+              <img class="card-img-top" src="http://via.placeholder.com/520x320" alt="" width="100%">
+              <div class="card-block">
+                <h4 class="card-title">Post Title</h4>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+                <a class="btn btn-default" href="#">Read More</a>
+              </div>
+             </div>
+            </div>
+            
+             <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+             <div class="card text-center">
+              <img class="card-img-top" src="http://via.placeholder.com/520x320" alt="" width="100%">
+              <div class="card-block">
+                <h4 class="card-title">Post Title</h4>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+                <a class="btn btn-default" href="#">Read More</a>
+              </div>
+             </div>
+            </div>
+            
+             <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+             <div class="card text-center">
+              <img class="card-img-top" src="http://via.placeholder.com/520x320" alt="" width="100%">
+              <div class="card-block">
+                <h4 class="card-title">Post Title</h4>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+                <a class="btn btn-default" href="#">Read More</a>
+              </div>
+             </div>
+            </div>
+            
+             <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+             <div class="card text-center">
+              <img class="card-img-top" src="http://via.placeholder.com/520x320" alt="" width="100%">
+              <div class="card-block">
+                <h4 class="card-title">Post Title</h4>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+                <a class="btn btn-default" href="#">Read More</a>
+              </div>
+             </div>
+            </div>
+           
+                  </div> <!-- row -->
+                </div> <!-- item -->
+                 
+                <div class="item">
+                  <div class="row">
+                    
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+             <div class="card text-center">
+              <img class="card-img-top" src="http://via.placeholder.com/520x320" alt="" width="100%">
+              <div class="card-block">
+                <h4 class="card-title">Post Title</h4>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+                <a class="btn btn-default" href="#">Read More</a>
+              </div>
+             </div>
+            </div>
+            
+             <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+             <div class="card text-center">
+              <img class="card-img-top" src="http://via.placeholder.com/520x320" alt="" width="100%">
+              <div class="card-block">
+                <h4 class="card-title">Post Title</h4>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+                <a class="btn btn-default" href="#">Read More</a>
+              </div>
+             </div>
+            </div>
+            
+             <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+             <div class="card text-center">
+              <img class="card-img-top" src="http://via.placeholder.com/520x320" alt="" width="100%">
+              <div class="card-block">
+                <h4 class="card-title">Post Title</h4>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+                <a class="btn btn-default" href="#">Read More</a>
+              </div>
+             </div>
+            </div>
+            
+             <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+             <div class="card text-center">
+              <img class="card-img-top" src="http://via.placeholder.com/520x320" alt="" width="100%">
+              <div class="card-block">
+                <h4 class="card-title">Post Title</h4>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+                <a class="btn btn-default" href="#">Read More</a>
+              </div>
+             </div>
+            </div>
+            
+                  </div> <!-- row -->
+                </div> <!-- item -->
+                 
+                 
+         </div>
+         </div>
+      </div>
+      
+    </div>
+  </section>
+
+</div>
+</div>
+
+
+<div class="navbar  navbar-fixed-bottom" style="background-color:white;">
+    <div class="container">
+      <p class="navbar-text pull-left">© 2018 - JUDE GARAY
+           
+      </p>
+       <div> <a href="http://instagram.com/jeeeygaray" class="navbar-btn btn pull-right"><span class="fa fa-instagram"></span> @jeeeygaray</a></div>
+      <div><a href="http://twitter.com/jeeeygaray" class="navbar-btn btn pull-right"><span class="fa fa-twitter"></span>@jeeeygaray</a></div>
+     <div> <a href="http://facebook.com/iam.jjgaray" class="navbar-btn btn pull-right"><span class="fa fa-facebook"></span> /iam.jjgaray</a></div>
+
+      
+
+    </div>
+    
+    
+  </div>
+</body>
+</html>
+<!-- 
+ <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Gallery</a>
+          <ul class="dropdown-menu" style="text-align:right;">
+            <li><a href="#">Option 1</a></li>
+            <li><a href="#">Option 2</a></li>
+            <li><a href="#">Option 3</a></li>
+          </ul>
+        </li> -->
+
+
+
+
+
